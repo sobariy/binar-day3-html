@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Tugas FORM HTML</title>
+        <link rel="stylesheet" href="style.css">
+        </head> 
+    <body>
+        <h1>Content</h1>
+        <div class="cont-1">
+            <h3>Ini adalah contoh Image</h3>
+            <img src="https://miro.medium.com/max/3784/1*jtneAE_hrmy29furvyoB4g.png" width="900px" height="350px">
+        </div>
+        <div class="cont-2">
+            <h3>Ini adalah contoh List</h3>
+                <ul>
+                    <li>Binar Academy</li>
+                    <li>BSD</li>
+                </ul>
+        </div>
+        <div class="cont-3">
+            <h3>Ini adalah contoh Link</h3>
+            <a href="https://binar.co.id">Binar Academy</a>
+        </div>
+        <div class="cont-4">
+            <h3>Ini adalah contoh Table</h3>
+                <table style="border: 1px solid;">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Mentor</th>
+                    </tr>
+                    <tr>
+                        <td>Makruf Sobari</td>
+                        <td>Ervin</td>
+                    </tr>
+                </table>
+        </div>
+        <h3>Ini Contoh FORM</h3>
+        <form action="index.html" method="POST">
+            <h1>Form Pendaftaran</h1>
+            <fieldset>
+                <p>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" name="email"></input>
+                </p>
+                <p>
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" name="password"></input>
+                </p>
+            </fieldset>
+            <fieldset>
+                    <legend><span class="number">1</span>Your basic info</legend>
+                <p>
+                    <label>Nama</label>
+                    <input type="text" name="nama" placeholder="Nama Lengkap">
+                </p>
+                <p>
+                    <label>Bahasa yang di kuasai</label>
+                    <input type="checkbox" name="bahasa" value="indonesia"> Indonesia
+                    <input type="checkbox" name="bahasa" value="inggris"> Inggris
+                </p>
+                <p>
+                    <label>Usia</label>
+                    <input type="number" name="usia">
+                </p>
+                <p>
+                    <label>Status</label>
+                    <select>
+                        <option name="menikah">Menikah</option>
+                        <option name="single">Jomblo</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Daftar</button>
+                </p>
+            </fieldset>
+        </form>
+        <footer style="text-align: center;">
+            <p>Footer by Makruf Sobari</p>
+            <p>Binar Academy</p>
+        </footer>
+
+    </body>
+</html>
