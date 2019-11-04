@@ -1,4 +1,3 @@
-#Binar X BPJS day 3 - 30 Okt 2019
+# README.md
 
-1. Pengenalan HTML
-
+REPOSITORY untuk Binar Academy X BPJS Batch 1
