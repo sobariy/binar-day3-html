@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Static Website | </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">LOGO</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li id="home"><a href="/">HOME</a></li>
+              <li id="about"><a href="/articles">ARTICLES</a></li>
+              <li id="contact"><a href="/contact">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1> <a href="/articles/create">Tambah Article</a></h1>
+
+      <h2>Article List</h2>
+      <br>
+      <br>
+       <!-- ambil data form article menggunakan looping forEach -->
+       <ol>
+          <% article.forEach(function(item) { %>
+            <li>
+              ID : <%= item._id %> <br>
+              Title : <%= item.title %> <br>
+              Author : <%= item.author %> <br>
+              Description : <%= item.description %> <br>
+              <a href="/articles/detail/<%= item.id %>">Detail</a>
+              <a href="/articles/delete/<%= item.id %>">Delete</a>
+              <a href="/articles/update">Update</a>
+            </li>
+          <% }) %>
+       </ol>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./javascripts/menu.js"></script>
+</html>
